@@ -57,7 +57,7 @@ address {
 
 section {
   /* padding: 120px 0; */
-  padding: 48px 0;
+  padding: 96px 0;
 }
 @media only screen and (min-width: 1158px) {
   section {
@@ -113,7 +113,6 @@ section {
 .header-logo {
   display: flex;
   align-items: center;
-  margin-right: 76px;
   padding: 24px 0;
   font-weight: 700;
   font-size: 18px;
@@ -123,6 +122,12 @@ section {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-logo {
+    margin-right: 76px;
+  }
 }
 
 .studio {
@@ -221,17 +226,20 @@ section {
 
 .address-nav {
   font-weight: 400;
-  font-size: 16px;
-  display: block;
+  font-size: 12px;
 
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   color: #434455;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media only screen and (min-width: 1168px) {
   .address-nav {
+    font-size: 16px;
+
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     padding: 24px 0;
   }
 }
@@ -1405,6 +1413,15 @@ input[type='checkbox']:checked + label > .agreement-checkbox {
   letter-spacing: 0.02em;
   color: #434455;
   margin-bottom: 48px;
+}
+
+.mobile-menu-socials {
+  margin: 0;
+  gap: 40px;
+}
+
+.mobile-icons {
+  width: 40px;
 }
 
 .mobile-menu-contacts .mobile-menu-item:not(:last-child) {
